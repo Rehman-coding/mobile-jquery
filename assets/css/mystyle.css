@@ -1,0 +1,56 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notonastaliqurdudraft.css);
+@font-face {
+        font-family: "Noto Nastaliq Urdu Draft";
+        src: url("NotoNastaliqUrdu-Regular.ttf");      
+        }
+.main-tab {
+
+width: 40%;
+margin: auto;
+
+}
+.required {
+    color: red;
+  }
+  body {
+	
+}
+label span {
+        font-family: 'Noto Nastaliq Urdu Draft', serif;
+        font-weight: bolder;
+
+}
+/* First breakpoint at 576px */
+/* Inherits mobile styles, but floats containers to make columns */
+@media all and (min-width: 15em){
+	.main-tab {
+
+        width: 90%;
+        margin: auto;
+        /* border: 2px solid red; */
+        
+        }
+}
+@media all and (min-width: 36em){
+	.main-tab {
+
+        width: 40%;
+        margin: auto;
+        /* border: 2px solid red; */
+        
+        }
+}
+
+/* Second breakpoint at 800px */
+/* Adjusts column proportions, tweaks base H1 */
+@media all and (min-width: 50em){
+	
+    .main-tab {
+
+        width: 40%;
+        margin: auto;
+        /* border: 2px solid red; */
+        
+        }
+	
+}

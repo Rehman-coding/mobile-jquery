@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8">
+	<title>User Detail</title>
+	<!-- Run in full-screen mode. -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<!-- Make the status bar black with white text. -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<!-- Customize home screen title. -->
+	<meta name="apple-mobile-web-app-title" content="Lemonado Web App">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	 <!-- Icons -->
+	 <link rel="stylesheet" href="assets/css/mystyle.css">
+
+	<!-- iOS 7 iPad (retina) -->
+	<link href="assets/img/apple/apple-touch-icon-152x152.png"
+		  sizes="152x152"
+		  rel="apple-touch-icon">
+
+	<!-- iOS 6 iPad (retina) -->
+	<link href="assets/img/apple/apple-touch-icon-144x144.png"
+		  sizes="144x144"
+		  rel="apple-touch-icon">
+
+	<!-- iOS 7 iPhone (retina) -->
+	<link href="assets/img/apple/apple-touch-icon-120x120.png"
+		  sizes="120x120"
+		  rel="apple-touch-icon">
+
+	<!-- iOS 6 iPhone (retina) -->
+	<link href="assets/img/apple/apple-touch-icon-114x114.png"
+		  sizes="114x114"
+		  rel="apple-touch-icon">
+
+	<!-- iOS 7 iPad -->
+	<link href="assets/img/apple/apple-touch-icon-76x76.png"
+		  sizes="76x76"
+		  rel="apple-touch-icon">
+
+	<!-- iOS 6 iPad -->
+	<link href="assets/img/apple/apple-touch-icon-72x72.png"
+		  sizes="72x72"
+		  rel="apple-touch-icon">
+
+	<!-- iOS 6 iPhone -->
+	<link href="assets/img/apple/apple-touch-icon-57x57.png"
+		  sizes="57x57"
+		  rel="apple-touch-icon">
+
+	<!-- Startup images -->
+
+	<!-- iOS 6 & 7 iPad (retina, portrait) -->
+	<link href="assets/img/apple/apple-touch-startup-image-1536x2008.png"
+		  media="(device-width: 768px) and (device-height: 1024px)
+			 and (orientation: portrait)
+			 and (-webkit-device-pixel-ratio: 2)"
+		  rel="apple-touch-startup-image">
+
+	<!-- iOS 6 & 7 iPad (retina, landscape) -->
+	<link href="assets/img/apple/apple-touch-startup-image-1496x2048.png"
+		  media="(device-width: 768px) and (device-height: 1024px)
+			 and (orientation: landscape)
+			 and (-webkit-device-pixel-ratio: 2)"
+		  rel="apple-touch-startup-image">
+
+	<!-- iOS 6 iPad (portrait) -->
+	<link href="assets/img/apple/apple-touch-startup-image-768x1004.png"
+		  media="(device-width: 768px) and (device-height: 1024px)
+			 and (orientation: portrait)
+			 and (-webkit-device-pixel-ratio: 1)"
+		  rel="apple-touch-startup-image">
+
+	<!-- iOS 6 iPad (landscape) -->
+	<link href="assets/img/apple/apple-touch-startup-image-748x1024.png"
+		  media="(device-width: 768px) and (device-height: 1024px)
+			 and (orientation: landscape)
+			 and (-webkit-device-pixel-ratio: 1)"
+		  rel="apple-touch-startup-image">
+
+	<!-- iOS 6 & 7 iPhone 5 -->
+	<link href="assets/img/apple/apple-touch-startup-image-640x1096.png"
+		  media="(device-width: 320px) and (device-height: 568px)
+			 and (-webkit-device-pixel-ratio: 2)"
+		  rel="apple-touch-startup-image">
+
+	<!-- iOS 6 & 7 iPhone (retina) -->
+	<link href="assets/img/apple/apple-touch-startup-image-640x920.png"
+		  media="(device-width: 320px) and (device-height: 480px)
+			 and (-webkit-device-pixel-ratio: 2)"
+		  rel="apple-touch-startup-image">
+
+	<!-- iOS 6 iPhone -->
+	<link href="assets/img/apple/apple-touch-startup-image-320x460.png"
+		  media="(device-width: 320px) and (device-height: 480px)
+			 and (-webkit-device-pixel-ratio: 1)"
+		  rel="apple-touch-startup-image">
+		  <link rel="stylesheet" href="assets/css/jquerymobile.css" />
+	<!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"> -->
+	<link rel="stylesheet" href="assets/css/style.css" />
+	<link rel="stylesheet" href="assets/css/photoswipe.css">
+	<link rel="stylesheet" href="assets/css/addtohomescreen.css">
+	<script defer type="text/javascript" src="assets/js/klass.min.js"></script>
+	<script src="assets/js/jquery11.js"></script>
+	<script src="assets/js/jquery14.js"></script>
+	<!-- <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
+	<script defer type="text/javascript" src="assets/js/jstorage.js"></script>
+	<script defer type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+	<script defer type="text/javascript" src="assets/js/code.photoswipe.jquery-3.0.5.min.js"></script>
+	<script defer type="text/javascript" src="assets/js/jquery.validate.min.js"></script>
+	<script defer src="assets/js/custom.js"></script>
+	<script type="application/javascript" src="assets/js/addtohomescreen.min.js"></script>
+	<script type="text/javascript">
+		addToHomescreen({
+			startDelay: 5,
+			skipFirstVisit: true
+		});
+	</script>
+</head>
+<body>
+ <div data-role="page" id="home">
+	<div data-role="panel" data-position="left" data-theme="b" data-display="push" id="left_panel">
+		<ul data-role="listview" data-inset="false" data-theme="b">
+			<li><div style="text-align: center;"><img src="assets/img/logo.png" alt="Logo"></div></li>
+			<li><a data-transition="slide" href="index.html"><img src="assets/img/menu-icons/home.png" alt="Home" class="ui-li-icon">Home</a></li>
+		
+			<li id="menu_news" class="countable"><a data-transition="slide" data-count="3" href="news.html"><img src="assets/img/menu-icons/star.png" alt="News" class="ui-li-icon">Customers<span class="ui-li-count hidden accent-color"></span></a></li>
+			<li id="menu_recipes" class="countable"><a data-transition="slide" data-count="2" href="recipes.html"><img src="assets/img/menu-icons/news.png" alt="Recipes" class="ui-li-icon">Add Customer<span class="ui-li-count hidden accent-color"></span></a></li>
+			<li id="menu_blog" class="countable"><a data-transition="slide" data-count="3" href="blog.html"><img src="assets/img/menu-icons/settings.png" alt="Blog" class="ui-li-icon">Setting<span class="ui-li-count hidden accent-color"></span></a></li>
+			<li id="menu_gallery" class="countable"><a data-transition="slide" data-count="0" href="gallery.html"><img src="assets/img/menu-icons/logout.png" alt="Gallery" class="ui-li-icon">Logout<span class="ui-li-count hidden accent-color"></span></a></li>
+			<li id="menu_video" class="countable"><a data-transition="slide" data-count="2" href="video.html"><img src="assets/img/menu-icons/support.png" alt="Video" class="ui-li-icon">Contact<span class="ui-li-count hidden accent-color"></span></a></li>
+			<li><a data-transition="slide" href="information.html"><img src="assets/img/menu-icons/information.png" alt="Information" class="ui-li-icon">About the App</a></li>
+		</ul>
+		<div style="position: relative; top: 15px;">
+			<p>Socialize</p>
+			<a href="#"><img src="assets/img/panel/skype.png" alt="Skype"></a>
+			<a href="#"><img src="assets/img/panel/twitter.png" alt="Twitter"></a>
+			<a href="#"><img src="assets/img/panel/vimeo.png" alt="Vimeo"></a>
+			<a href="#"><img src="assets/img/panel/facebook.png" alt="Facebook"></a>
+			<a href="#"><img src="assets/img/panel/google.png" alt="Google+"></a>
+			<a href="#"><img src="assets/img/panel/youtube.png" alt="YouTube"></a>
+		</div>
+	</div> 
+	<div data-role="panel" data-theme="b" data-position="right" data-display="push" id="right_panel">
+		<div style="text-align: center;">
+			<h4 style="margin-top: 0px;">Share this page on:</h4>
+			<div class="panel-social-wrap">
+				<a class="facebook_share_link" title="Share link on Facebook" target="_blank" href="#" rel="nofollow">
+					<div class="panel-social panel-social-twitter accent-color">
+						<img src="assets/img/facebook.png" alt="Facebook">
+					</div>
+				</a>
+				<div class="panel-social-counter facebook_number"></div>
+			</div>
+			<div class="panel-social-wrap">
+				<a class="twitter_share_link" title="Share link on Twitter" target="_blank" href="#" rel="nofollow">
+					<div class="panel-social panel-social-facebook accent-color">
+						<img src="assets/img/twitter.png" alt="Twitter">
+					</div>
+				</a>
+				<div class="panel-social-counter twitter_number"></div>
+			</div>
+			<div class="panel-social-wrap">
+				<a class="google_share_link" title="Share link on Google+" target="_blank" href="#" rel="nofollow">
+					<div class="panel-social panel-social-google accent-color">
+						<img src="assets/img/google.png" alt="Google+">
+					</div>
+				</a>
+				<div class="panel-social-counter google_number"></div>
+			</div>
+		</div>
+	</div>
+	<div id="header" data-role="header" data-position="fixed" data-theme="c">
+		<div class="header_wrapper">
+			<a style="border-left: none;" class="header_button" href="#left_panel" data-inline="true" data-role="button" data-corners="false" data-theme="c">
+				<img class="header-btn-image" style="width: 100%; height: 100%;" src="assets/img/menu.png" alt="Menu">
+				<span class="menu-btn-background"></span>
+				<span class="counter-header hidden accent-color" style="color: #ffffff;"></span>
+			</a>
+			<span class="page_title">Home</span>
+			<a style="float: right; border: none;" class="header_button" href="#" data-inline="true" data-rel="back" data-role="button" data-corners="false" data-theme="c">
+				<img style="width: 100%; height: 100%;" src="assets/img/back.png" alt="Back">
+				<span class="btn-background"></span>
+			</a>
+			<a style="float: right;" class="header_button" href="#right_panel" data-inline="true" data-role="button" data-corners="false" data-theme="c">
+				<img style="width: 100%; height: 100%;" src="assets/img/share.png" alt="Share">
+				<span class="btn-background share-btn-background"></span>
+			</a>
+			<div style="clear: both"></div>
+		</div>
+	</div>
+	<div id="homepage_content" data-role="content">
+		<div class="page-tagline accent-color">
+			<img src="assets/img/logo.png" alt="Logo">
+		</div>
+		
+		<hr style="background-image: #bebebe;">
+		<div class="container">
+			<div data-role="tabs" id="tabs" class="main-tab">
+				  <div data-role="navbar">
+					    <ul id="tab-btn">
+                              
+                                                
+						<li id="tab-login" ><a href="#one" data-ajax="false">User Detail</a></li>
+
+						<li id="tab-register"><a href="#two" data-ajax="false">Measurment</a></li>
+					   
+					  </ul>
+				  </div>
+				  <div id="one" class="ui-body-d ui-content">
+				   
+				    <form action="">
+					<label for="text-basic">MOBILE #<span class="required"> *</span></label>
+					<input type="number" name="number" pattern="[0-9]*" id="number-pattern" v-on:blur="lookupCustomerData" v-model="cPhone" class="phone input-form" value="">
+					
+
+					<label for="text-basic">CODE<span class="required"> *</span></label>
+					<input type="number" name="number" pattern="[0-9]*" id="code" v-model="code" class="code input-form" id="number-pattern" value="">
+				
+		
+				    <label for="text-basic">NAME<span class="required"> *</span></label>
+					<input type="text" name="text-basic" class="input-form" v-model="cName" id="text-basic" value="">
+					
+
+				    <label for="text-basic">EMAIL</label>
+					<input type="text" name="text-basic" class="input-form" v-model="cEmail"  id="text-basic" value="">
+					
+
+					<label for="textarea">ADDRESS</label>
+					<textarea cols="40" rows="3" name="textarea" id="textarea"class="input-form"  v-model="cAddress"></textarea>
+					
+
+					 
+					
+
+					<label for="select-choice-1" class="select">COUNTRY</label>
+				<select name="select-choice-1" id="select-choice-1">
+					<option value="standard">Pakistan</option>
+					<option value="rush">China</option>
+					<option value="express">India</option>
+					
+				</select>
+
+				<label for="select-choice-1" class="select">CITY</label>
+				<select name="select-choice-1" id="select-choice-1" class="input-form" v-model="cCity" >
+					<option value="standard">Islamabad</option>
+					<option value="rush">Lahore</option>
+					<option value="express">Rawalpindi</option>
+					
+				</select>
+				
+
+				<label for="text-basic">ZIP</label>
+				<input type="number" name="number" pattern="[0-9]*" id="number-pattern" class="input-form" v-model="cZip" value="">
+				
+				<label for="text-basic">TOTAL DRESS <span class="required"> *</span></label>
+				<input type="number" name="number" pattern="[0-9]*" id="total_dress" class="input-form" v-model="cTotalDress" value="">
+
+				<label for="date">RETURN DATE</label>
+				<input type="date" name="date" id="date" v-model="cReturnDate" class="input-form" value="" placeholder="mm/dd/yyyy">
+
+				<label for="text-basic">TOTAL BILL <span class="required"> *</span></label>
+				<input type="number" name="number" pattern="[0-9]*" id="number-pattern" class="input-form" v-model="cTotalBill" value="">
+				
+
+					<hr style="background: #bebebe; margin: 15px 0px;">
+					
+				</form>
+				<div style="background: #bebebe; margin: 35px 0px;"></div>
+				<a href="#" data-role="button">SAVE</a>
+			
+				  </div>
+				  <div id="two">
+					    <form action="">
+							<label for="text-basic">TALLNESS/<span>لمبائی </span>
+									<span class="required"> *</span></label>
+							<input type="number" name="text-basic" id="text-basic" class="input-form" value="" v-model="cTallNess">
+							
+
+							
+							<label for="text-basic">ARM/<span> بازو  </span><span class="required"> *</span></label>
+							<input type="number" name="text-basic" id="text-basic" class="input-form" value="" v-model="cArm">
+
+							
+							<label for="text-basic">SHOULDER <span>/تیرہ  </span><span class="required"> *</span></label>
+							<input type="number" name="text-basic" id="text-basic" class="input-form" value="" v-model="cShoulder">
+
+							
+							<label for="text-basic">COLLAR TYPE/<span> کالر  </span><span class="required"> *</span></label>
+							<fieldset data-role="controlgroup" v-model="collarType">
+     
+									<input type="radio" name="radio-choice-1" id="radio-choice-10" value="choice-1" checked="checked">
+									<label for="radio-choice-10">COLLAR <span>/کالر </span></label>
+									<input type="radio" name="radio-choice-1" id="radio-choice-20" value="choice-2">
+									<label for="radio-choice-20">BAIN/<span> بین </span></label>
+									
+							</fieldset>
+						
+						<label for="text-basic">COLLAR LENGTH <span>/کالرلمبائی </span><span class="required"> *</span></label>
+						<input type="number" name="number" pattern="[0-9]*" id="number-pattern"  tabindex="1" class="form-control" value="" v-model="cCollar">
+
+
+
+						<label for="text-basic">CHEST/<span>   چھاتی </span><span class="required"> *</span></label>
+						<input type="number" name="number" pattern="[0-9]*" id="number-pattern" class="form-control" value="" v-model="cChest">
+
+						<label for="text-basic">HIPP<span>/دامن</span> Type<span class="required"> *</span></label>
+							<fieldset data-role="controlgroup" v-model="hippType">
+   
+									<input type="radio" name="radio-choice-2" id="radio-choice-111" value="choice-3" checked="checked">
+									<label for="radio-choice-111">STRAIGHT<span>/سیدھا </span></label>
+									<input type="radio" name="radio-choice-2" id="radio-choice-222" name="hippType" v-model="hippType"  value="choice-4">
+
+									<!-- <input type="radio" id="typeRound" name="hippType" v-model="hippType" value="2"> -->
+
+									<label for="radio-choice-222">ROUNDE/</span>  گول </span></label>
+									
+							</fieldset>
+							<label for="text-basic">HIPP <span>/لمبائی دامن </span><span class="required"> *</span></label>
+							<input type="number" name="number" pattern="[0-9]*" id="number-pattern" class="form-control" value="" v-model="cHipp">
+
+							<label for="text-basic">PANT<span>/شلوار </span><span class="required"> *</span></label>
+							<input type="number" name="number" pattern="[0-9]*" id="number-pattern" class="form-control" value="" v-model="cPant">
+
+							<label for="text-basic">ANKLE<span>/پانچہ </span> <span class="required"> *</span></label>
+							<input type="number" name="number" pattern="[0-9]*" id="number-pattern" class="form-control" value="" v-model="cPancha">
+
+							<label for="text-basic">BOOK DESIGN #</label>
+							<input type="number" name="number" pattern="[0-9]*" id="number-pattern" class="form-control" value="" v-model="cDesignNo">
+					
+							<label for="textarea">SPACIAL MEASUREMENT</label>
+					<textarea cols="40" class="form-control" cols="4" v-model="cSpecialMeasurements" rows="8" name="textarea" id="textarea"></textarea>
+					</form>
+					<div style="background: #bebebe; margin: 35px 0px;"></div>
+					<a href="#" data-role="button">SAVE</a>
+				  </div>
+				</div>
+
+
+		</div>
+				<div>
+						<h6 class="footer-text">© WebExert</h6>
+				</div>
+			</div><!-- /content -->
+		</div><!-- /page -->
+		<script type="text/javascript" src="assets/js/retina.min.js"></script>
+	</body>
+</html>
